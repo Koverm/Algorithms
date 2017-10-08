@@ -77,6 +77,13 @@ public class MoveZerosInArrayTest {
 
     assertZerosAtRight(array);
   }
+  @Test public void myfunction() {
+    int[] array = { 1,2 };
+
+    moveZeros.moveSorting(array);
+
+    assertZerosAtRight(array);
+  }
 
   @Test(expected = IllegalArgumentException.class)
   public void shouldNotAcceptNullArraysWithTwoPointers() {
