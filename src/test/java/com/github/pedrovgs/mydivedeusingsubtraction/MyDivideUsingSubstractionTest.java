@@ -51,4 +51,18 @@ public class MyDivideUsingSubstractionTest {
         assertEquals(11.3, result, DELTA);
     }
 
+    @Test
+    public void DividerBiggerRecursive(){
+        float result =dus.divideRecursive(25,100);
+
+        assertEquals(0.25, result, DELTA);
+    }
+
+    @Test
+    public void DividerBiggerIterative(){
+        float result =dus.divideIterative(20,100);
+
+        assertEquals(0.2, result, DELTA);
+    }
+
 }
