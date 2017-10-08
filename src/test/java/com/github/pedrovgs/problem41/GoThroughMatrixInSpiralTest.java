@@ -59,4 +59,21 @@ public class GoThroughMatrixInSpiralTest {
     };
     assertArrayEquals(expected, result);
   }
+  @Test public void shouldretunr1() {
+    int[][] matrix = {{1}};
+
+    int[] result = goThroughMatrixInSpiral.go(matrix);
+
+    int[] expected = {1};
+    assertArrayEquals(expected, result);
+  }
+
+  @Test public void shouldretunr12() {
+    int[][] matrix = {{1},{2}};
+
+    int[] result = goThroughMatrixInSpiral.go(matrix);
+
+    int[] expected = {1,2};
+    assertArrayEquals(expected, result);
+  }
 }
